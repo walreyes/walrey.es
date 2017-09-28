@@ -40,7 +40,15 @@ page '/*.txt', layout: false
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+configure :development do
+  activate :livereload
+  activate :sprockets
+  activate :directory_indexes
+  activate :i18n, :langs => [:en, :es]
+end
+
+
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
+end
