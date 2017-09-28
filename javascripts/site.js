@@ -1,6 +1,6 @@
 $( document ).ready(function() {
   console.log( "Got ya! What are you doing here, Sneaky Inspector?" );
-  console.log( "Hit me up at: hi@walrey.es" );
+  console.log( "Hit me up at: hey@walrey.es" );
 
   $('div#go-to-some-of-me').click(() => {
     $('html, body').animate({
